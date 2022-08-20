@@ -14,10 +14,11 @@ function App() {
     });
   };
   return (
-    <div className="App">
+    // we can also use React.Fragment instead of <></>
+    <>
       <AddUser onAddUser={addUserHandler} />
       <UsersList users={usersList} />
-    </div>
+    </>
   );
 }
 
